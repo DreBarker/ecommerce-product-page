@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+
+</head>
+
+<body>
+
+  <div class="header">
+
+    <nav>
+      <div class="left-nav">
+        <img class="hamburger-menu-icon" src="images/icon-menu.svg" alt="" srcset="">
+        <img class="logo" src="images/logo.svg" alt="" srcset="">
+        <div class="sidebar hidden">
+          <ul class="side-menu">
+            <img class="close-btn" src="images/icon-close.svg" alt="" srcset="">
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right-nav">
+        <div class = cart-wrapper>
+        <p class="popup-count"></p>
+        <img class="cart-icon" src="images/icon-cart.svg" alt="" srcset="">
+        </div>
+        <img class="avatar" src="images/image-avatar.png" alt="" srcset="">
+      </div>
+
+      <div class="cart cart-hidden">
+        <p class="cart-header">Cart</p>
+        <p class="empty-cart-msg">Your cart is empty</p>
+        <div class="cart-items">
+        
+        </div>
+
+        <div class="cart-btn-section checkout-btn-hidden">
+          <button class="cart-checkout-btn">Checkout</button>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+
+  <div class="content">
+
+    <div class="product-wrapper">
+
+      <div class="left-content lightbox">
+        <span class="product-hero-img-container">
+          <img class="backward-icon" src="images/icon-previous.svg" alt="" srcset="">
+          <img class="forward-icon" src="images/icon-next.svg" alt="" srcset="">
+          <img class="product-hero-img" src="images/image-product-1.jpg" alt="" srcset="">
+        </span>
+
+        <div class="thumb-gallery">
+          <img class="thumbnail-img active" src="images/image-product-1-thumbnail.jpg" alt="" srcset="">
+          <img class="thumbnail-img" src="images/image-product-2-thumbnail.jpg" alt="" srcset="">
+          <img class="thumbnail-img" src="images/image-product-3-thumbnail.jpg" alt="" srcset="">
+          <img class="thumbnail-img" src="images/image-product-4-thumbnail.jpg" alt="" srcset="">
+
+        </div>
+      </div>
+
+      <div class="right-content">
+
+        <h5 class="company-name">Sneaker Company</h5>
+
+        <h1>Fall Limited Edition Sneakers</h1>
+
+        <p class="product-description">These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+
+        <div class="price-section">
+          <div class="price-and-discount-container">
+            <p class="product-price">$125.00</p>
+            <p class="product-discount"> 50%</p>
+          </div>
+
+          <p class="product-old-price">$250.00</p>
+        </div>
+
+
+        <div class="add-to-cart-container">
+          <div class="product-count-container">
+            <img class="product-decrement-btn" src="images/icon-minus.svg" alt="" srcset="">
+            <span class="product-count">1</span>
+            <img class="product-increment-btn" src="images/icon-plus.svg" alt="" srcset="">
+          </div>
+          <button class="add-to-cart-btn"><img src="images/icon-cart.svg" alt="" srcset=""> Add to cart</button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="overlay overlay-hidden">
+
+      <div class="lightbox-close-btn-container">
+        <img class="overlay-close-btn" src="images/icon-close.svg" alt="" srcset="">
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
